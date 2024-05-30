@@ -26,3 +26,15 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .whole-login {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar .whole-login {
+    display: none;
+    border: 1px solid red;
+  }
+}
