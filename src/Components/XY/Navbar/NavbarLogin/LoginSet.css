@@ -1,0 +1,28 @@
+.whole-login {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.login-section img {
+  margin-right: 0.5rem;
+}
+
+.login-section h6 {
+  display: contents;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: rgba(35, 166, 240, 1);
+}
+
+.Login-Icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

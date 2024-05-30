@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.Nav-bar-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.brand-name {
+  display: flex;
+}
+
+.brand-name h3 {
+  font-family: "Montserrat";
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: rgba(37, 43, 66, 1);
+}
