@@ -1,4 +1,4 @@
-/* * {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -26,8 +26,9 @@ html {
   letter-spacing: 0.10000000149011612px;
   text-align: left;
   color: rgba(37, 43, 66, 1);
+  padding-left: 9rem;
 }
-.navbar-links {
+/* .navbar-links {
   display: flex;
   gap: 15px;
 }
@@ -42,9 +43,9 @@ html {
   display: none;
   flex-direction: column;
   cursor: pointer;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .navbar-links {
     display: none;
     flex-direction: column;
@@ -60,8 +61,15 @@ html {
   }
 } */
 
+/* .bingo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+} */
+
 /* src/Navbar.css */
-body {
+/* body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -109,10 +117,10 @@ body {
   height: 3px;
   background-color: black;
   margin: 3px 0;
-}
+} */
 
 /* Media Queries for Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .navbar-links {
     display: none;
     flex-direction: column;
@@ -122,6 +130,14 @@ body {
     align-items: center;
   }
 
+  .bingo {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
   .navbar-logo h3 {
     position: absolute;
     top: 0%;
@@ -134,10 +150,14 @@ body {
 
   .navbar-toggle {
     display: flex;
+    position: absolute;
+    top: 0%;
+    left: 90%;
+    padding: 10px;
   }
 
   .navbar .whole-login {
     display: none;
     border: 1px solid red;
   }
-}
+} */

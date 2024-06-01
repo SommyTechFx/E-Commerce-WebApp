@@ -1,0 +1,92 @@
+.Page7-Total {
+  display: flex;
+  background-color: white;
+}
+
+.Page7-Total h3 {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: rgba(37, 43, 66, 1);
+  padding-left: 10rem;
+}
+.Page7-text-footer img {
+  margin-left: 10px;
+}
+
+/* Page7 Lat Footer */
+
+.Page7-Footer-Total {
+  display: flex;
+  justify-content: center;
+}
+.Page7-Footer {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+  align-items: center;
+}
+
+hr {
+  border: 1px solid rgb(245, 245, 245);
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.Page7-Footer h5 {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: rgba(37, 43, 66, 1);
+  margin-bottom: 1rem;
+}
+
+.Page7-Footer p {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(115, 115, 115, 1);
+}
+
+form {
+  border: 1px solid rgba(230, 230, 230, 1);
+}
+input[type="email"] {
+  border: none;
+  padding: 10px;
+  background-color: rgba(230, 230, 230, 1);
+}
+
+form button {
+  padding: 10px;
+  background-color: rgba(35, 166, 240, 1);
+  color: white;
+  border: none;
+}
+
+/* Page 7 footer info */
+
+.Page7-Footer-Total-info {
+  background-color: rgba(250, 250, 250, 1);
+  padding: 2.4rem;
+}
+
+.Page7-Footer-Total-info p {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(115, 115, 115, 1);
+  margin-left: 5rem;
+}

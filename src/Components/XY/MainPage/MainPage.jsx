@@ -22,9 +22,7 @@ import Page5grid6 from "../../../assets/Images3/Page5grid6.png";
 import Page5grid7 from "../../../assets/Images3/Page5grid7.png";
 import Page5grid8 from "../../../assets/Images3/Page5grid8.png";
 import Page5grid9 from "../../../assets/Images3/Page5grid9.png";
-import BlueIconFacebook from "../../../assets/Images1/BlueIconFacebook.png";
-import BlueIconInstagram from "../../../assets/Images1/BlueIconInstagram.png";
-import BlueIconTwitter from "../../../assets/Images1/BlueIconTwitter.png";
+
 import Slide1 from "./MainPageSlides/Slide1";
 import Slide2 from "./MainPageSlides/Slide2";
 import Slide7 from "./MainPageSlides/Slide7";
@@ -45,6 +43,9 @@ function MainPage() {
         </div>
       </div>
       <Slide2 />
+      <div className="page-2-button">
+        <button>LOAD MORE PRODUCTS</button>
+      </div>
 
       <div className="Page3-Total">
         <div className="Page3">
@@ -276,18 +277,6 @@ function MainPage() {
         </div>
       </div>
 
-      <div className="Page7-Total">
-        <div>
-          <h3>Bandage</h3>
-        </div>
-
-        <div className="Page7-text-footer">
-          <img src={BlueIconFacebook} alt="social" />
-          <img src={BlueIconInstagram} alt="social" />
-          <img src={BlueIconTwitter} alt="social" />
-        </div>
-      </div>
-      <hr />
       <Slide7 />
 
       <div className="Page7-Footer-Total-info">

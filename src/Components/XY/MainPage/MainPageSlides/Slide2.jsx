@@ -119,10 +119,6 @@ function Slide2() {
           </p>
         </div>
       </div>
-
-      <div className="page-2-button">
-        <button>LOAD MORE PRODUCTS</button>
-      </div>
     </div>
   );
 }

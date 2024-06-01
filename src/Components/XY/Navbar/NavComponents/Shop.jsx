@@ -1,20 +1,41 @@
 // import React from 'react'
 
+import { useState } from "react";
+
 function Shop() {
+  const [selectedValue, setSelectedValue] = useState("");
+
+  const handleChange = (event) => {
+    setSelectedValue(event.target.value);
+  };
+
   return (
     <div>
-      <h4
+      <label
         style={{
+          outline: "none",
+          border: "none",
           fontFamily: "Montserrat",
-          fontWeight: "700",
-          fontSize: "1.4rem",
-          lineHeight: "2.4rem",
-          color: "rgba(115, 115, 115, 1)",
-          alignItems: "center",
         }}
+        htmlFor="fruits"
+      ></label>
+      <select
+        style={{
+          outline: "none",
+          border: "none",
+          textAlign: "center",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+        id="fruits"
+        value={selectedValue}
+        onChange={handleChange}
       >
-        Shop
-      </h4>
+        <option value="">Shop</option>
+        <option value="Shopping Cart">Shopping Cart</option>
+      </select>
+      {selectedValue && <p>Home : {selectedValue}</p>}
     </div>
   );
 }

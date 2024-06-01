@@ -16,6 +16,46 @@
   margin-bottom: 9rem;
   opacity: 0px;
 }
+
+.fig1 {
+  display: flex;
+  position: relative;
+}
+
+.fig1-text {
+  position: absolute;
+  top: 4rem;
+  left: 2rem;
+}
+
+.fig1-text p {
+  font-family: "Montserra" t;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(45, 192, 113, 1);
+}
+
+.fig1-text h5 {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(37, 43, 66, 1);
+}
+
+.fig1-text h6 {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
 .fig1 img {
   width: 452px;
   height: 620px;
@@ -24,6 +64,46 @@
   opacity: 0px;
 }
 
+/* fig2-text area */
+.fig2 {
+  display: flex;
+  position: relative;
+}
+
+.fig2-text {
+  position: absolute;
+  top: 4rem;
+  left: 2rem;
+}
+
+.fig2-text p {
+  font-family: "Montserra" t;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(45, 192, 113, 1);
+}
+
+.fig2-text h5 {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(37, 43, 66, 1);
+}
+
+.fig2-text h6 {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
 .fig2 img {
   width: 670px;
   height: 270px;
@@ -36,13 +116,88 @@
   height: 300px;
   gap: 0.5rem;
   opacity: 0px;
+  display: flex;
+  position: relative;
 }
 
+.fig3-text {
+  position: absolute;
+  top: 4rem;
+  left: 2rem;
+}
+
+.fig3-text p {
+  font-family: "Montserra" t;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(45, 192, 113, 1);
+}
+
+.fig3-text h5 {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(37, 43, 66, 1);
+}
+
+.fig3-text h6 {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
 .fig3 img {
   width: 332px;
   height: 320px;
   gap: 0.5rem;
   opacity: 0px;
+}
+
+.fig3-sub {
+  display: flex;
+  position: relative;
+}
+
+.fig3-sub-text {
+  position: absolute;
+  top: 4rem;
+  left: 2rem;
+}
+.fig3-sub-text p {
+  font-family: "Montserra" t;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(45, 192, 113, 1);
+}
+
+.fig3-sub-text h5 {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(37, 43, 66, 1);
+}
+
+.fig3-sub-text h6 {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
 }
 
 /* Page 2 */

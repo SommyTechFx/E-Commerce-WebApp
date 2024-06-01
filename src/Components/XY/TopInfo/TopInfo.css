@@ -81,3 +81,11 @@ html {
   letter-spacing: 0.20000000298023224px;
   text-align: left;
 }
+
+@media (max-width: 768px) {
+  .Top-information {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+}

@@ -1,13 +1,10 @@
 // import React from 'react'
-import "../../../../Components/XY/MainPage/MainPage.css";
-import BlueIconFacebook from "../../../../assets/Images1/BlueIconFacebook.png";
-import BlueIconTwitter from "../../../../assets/Images1/BlueIconTwitter.png";
-import BlueIconInstagram from "../../../../assets/Images1/BlueIconInstagram.png";
-// import BlueIconFacebook from "../../../../assets/Images1/BlueIconFacebook";
-// import BlueIconInstagram from "../../../../assets/Images1/BlueIconInstagram";
-// import BlueIconTwitter from "../../../../assets/Images1/BlueIconTwitter";
+import "./Footer.css";
+import BlueIconFacebook from "../../../assets/Images1/BlueIconFacebook.png";
+import BlueIconTwitter from "../../../assets/Images1/BlueIconTwitter.png";
+import BlueIconInstagram from "../../../assets/Images1/BlueIconInstagram.png";
 
-function Slide7() {
+function Footer() {
   return (
     <div>
       <div className="Page7-Total">
@@ -91,4 +88,4 @@ function Slide7() {
   );
 }
 
-export default Slide7;
+export default Footer;
