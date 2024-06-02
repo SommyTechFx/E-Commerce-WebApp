@@ -7,71 +7,85 @@ import Blog from "../../../Components/XY/Navbar/NavComponents/Blog";
 import Contact from "../../../Components/XY/Navbar/NavComponents/Contact";
 import Pages from "../../../Components/XY/Navbar/NavComponents/Pages";
 import LoginSet from "./NavbarLogin/LoginSet";
-function NavBar() {
-  // const [isOpen, setIsOpen] = useState(false);
+import { Link, NavLink } from "react-router-dom";
+// import { GiHamburgerMenu } from "react-icons/gi";
 
-  // const toggleMenu = () => {
-  //   setIsOpen(!isOpen);
+import { ImCross } from "react-icons/im";
+import PropTypes from "prop-types";
+import { GiHamburgerMenu } from "react-icons/gi";
+function NavBar({ clicked, isClicked }) {
+  NavBar.propTypes = {
+    clicked: PropTypes.bool.isRequired,
+    isClicked: PropTypes.func.isRequired,
+  };
+  const handleClicked = () => {
+    isClicked(!clicked);
+  };
+
+  // const navigate = useNavigate();
+
+  // const navigateToPage2 = () => {
+  //   navigate("/profile");
+  // };
+  // const navigateToPage2 = () => {
+  //   navigate("/home");
+  // };
 
   return (
-    <div className="Nav-bar-section">
-      <div className="brand-name">
-        <h3>Bandage</h3>
-      </div>
+    <div className="Nav">
+      <ul className="Nav-wrapper">
+        <li className="Nav-logo">
+          <Link className="Link" to="/">
+            Bandage
+          </Link>
+        </li>
+        <li className="Nav-Element">
+          <NavLink className="Link">
+            <Home to="/" />
+          </NavLink>
+        </li>
 
-      <div style={{ display: "flex", gap: "1.5rem" }}>
-        <div>
-          <Home />
-        </div>
-        <div>
-          <Shop />
-        </div>
-        <div>
-          <About />
-        </div>
-        <div>
-          <Blog />
-        </div>
-        <div>
-          <Contact />
-        </div>
-        <div>
-          <Pages />
-        </div>
-      </div>
+        <liv className="Nav-Element">
+          <NavLink className="Link">
+            <Shop to="/page2" />
+          </NavLink>
+        </liv>
 
-      <div>
-        <LoginSet />
-      </div>
+        <li className="Nav-Element">
+          <NavLink className="Link">
+            <About />
+          </NavLink>
+        </li>
+
+        <li className="Nav-Element">
+          <NavLink className="Link">
+            <Blog />
+          </NavLink>
+        </li>
+
+        <li className="Nav-Element">
+          <NavLink className="Link">
+            <Contact />
+          </NavLink>
+        </li>
+        <li className="Nav-Element">
+          <NavLink className="Link">
+            <Pages />
+          </NavLink>
+        </li>
+
+        <li className="Nav-Button">
+          <NavLink className="Link">
+            <LoginSet />
+          </NavLink>
+        </li>
+      </ul>
+      {!clicked ? (
+        <GiHamburgerMenu onClick={handleClicked} className="icon" />
+      ) : (
+        <ImCross onClick={handleClicked} className="icon" />
+      )}
     </div>
-
-    // <nav className="navbar">
-    //   <div className="navbar-logo">
-    //     <h3>Bandage</h3>
-    //   </div>
-
-    //   <div className="bingo">
-    //     <Home />
-    //     <Shop />
-    //     <About />
-    //     <Blog />
-    //     <Contact />
-    //     <Pages />
-    //     <div className="bingo2">
-    //       <LoginSet />
-    //     </div>
-    //   </div>
-    //   <div className={`navbar-links ${isOpen ? "open" : ""}`}>
-    //     <div>
-    //       <p>Products</p>
-    //     </div>
-    //   </div>
-    //   <div className="navbar-toggle" onClick={toggleMenu}>
-    //     <span className="bar"></span>
-    //     <span className="bar"></span>
-    //     <span className="bar"></span>
-    //   </div>
-    // </nav>
   );
 }
 

@@ -1,9 +1,13 @@
 // import React from 'react'
 
 function Contact() {
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div>
       <h4
+        onClick={() => scrollToSection("contact")}
         style={{
           fontFamily: "Montserrat",
           fontWeight: "700",

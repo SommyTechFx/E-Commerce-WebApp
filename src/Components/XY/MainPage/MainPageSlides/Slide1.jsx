@@ -1,9 +1,10 @@
 // import React from 'react'
-import "../../../../Components/XY/MainPage/MainPage.css";
+
 import pic1 from "../../../../assets/Images1/pic1.png";
 import pic2 from "../../../../assets/Images1/pic2.png";
 import pic3 from "../../../../assets/Images1/pic3.png";
 import pic4 from "../../../../assets/Images1/pic4.png";
+import "./Slides.css";
 
 function Slide1() {
   return (

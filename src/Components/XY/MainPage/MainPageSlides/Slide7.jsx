@@ -1,16 +1,14 @@
 // import React from 'react'
-import "../../../../Components/XY/MainPage/MainPage.css";
+
 import BlueIconFacebook from "../../../../assets/Images1/BlueIconFacebook.png";
 import BlueIconTwitter from "../../../../assets/Images1/BlueIconTwitter.png";
 import BlueIconInstagram from "../../../../assets/Images1/BlueIconInstagram.png";
-// import BlueIconFacebook from "../../../../assets/Images1/BlueIconFacebook";
-// import BlueIconInstagram from "../../../../assets/Images1/BlueIconInstagram";
-// import BlueIconTwitter from "../../../../assets/Images1/BlueIconTwitter";
+import "./Slides.css";
 
 function Slide7() {
   return (
     <div>
-      <div className="Page7-Total">
+      <div className="Page7-Total" id="contact">
         <div>
           <h3>Bandage</h3>
         </div>
@@ -86,6 +84,9 @@ function Slide7() {
             </p>
           </div>
         </div>
+      </div>
+      <div className="Page7-Footer-Total-info">
+        <p>Made With Love By Finland All Right Reserved </p>
       </div>
     </div>
   );

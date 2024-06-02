@@ -48,15 +48,15 @@ function MainPage() {
       </div>
 
       <div className="Page3-Total">
-        <div className="Page3">
-          <div>
-            <p className="product-text">
-              <h4>Featured Products</h4>
-              <h3>THE BEST SERVICES</h3>
-              <p>Problems trying to resolve the conflict between </p>
-            </p>
-          </div>
+        <div>
+          <p className="product-text">
+            <h4>Featured Products</h4>
+            <h3>THE BEST SERVICES</h3>
+            <p>Problems trying to resolve the conflict between </p>
+          </p>
+        </div>
 
+        <div className="Page3-div">
           <div className="page3-product-service">
             <div className="product-service2">
               <img src={Page3Icon1} alt="page4" />
@@ -98,7 +98,7 @@ function MainPage() {
         </div>
       </div>
 
-      <div className="Page4-Total">
+      <div className="Page4-Total" id="blog">
         <div className="page4-text">
           <p>
             <h5>Practice Advice</h5>
@@ -208,7 +208,7 @@ function MainPage() {
         </div>
       </div>
 
-      <div className="Page5-Total">
+      <div className="Page5-Total" id="about">
         <div className="Page5-div1">
           <h3>What they say about us</h3>
 
@@ -278,10 +278,6 @@ function MainPage() {
       </div>
 
       <Slide7 />
-
-      <div className="Page7-Footer-Total-info">
-        <p>Made With Love By Finland All Right Reserved </p>
-      </div>
     </div>
   );
 }
