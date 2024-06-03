@@ -5,30 +5,29 @@
 // import pic2 from "../../../../assets/Images1/pic2.png";
 // import pic3 from "../../../../assets/Images1/pic3.png";
 // import pic4 from "../../../../assets/Images1/pic4.png";
-import { useState } from "react";
+
 import { useGetProductsQuery } from "../../../../services/api";
 import "./Slides.css";
-import Popup from "../../Popup";
 
 function Slide1() {
-  const [popupState, setPopupState] = useState({
-    popup1: false,
-    popup2: false,
-  });
+  // const [popupState, setPopupState] = useState({
+  //   popup1: false,
+  //   popup2: false,
+  // });
 
-  const showPopup = (popupName) => {
-    setPopupState((prevState) => ({
-      ...prevState,
-      [popupName]: true,
-    }));
-  };
+  // const showPopup = (popupName) => {
+  //   setPopupState((prevState) => ({
+  //     ...prevState,
+  //     [popupName]: true,
+  //   }));
+  // };
 
-  const closePopup = (popupName) => {
-    setPopupState((prevState) => ({
-      ...prevState,
-      [popupName]: false,
-    }));
-  };
+  // const closePopup = (popupName) => {
+  //   setPopupState((prevState) => ({
+  //     ...prevState,
+  //     [popupName]: false,
+  //   }));
+  // };
   const {
     data: products,
     error,
@@ -47,12 +46,8 @@ function Slide1() {
                 <p className="fig1-text">
                   <p>{product.stock} Items</p>
                   <h5>{product.category}</h5>
-                  <h6>Read More onClick={() => showPopup("popup1")}</h6>
+                  <h6>Read More </h6>
                 </p>
-                <Popup
-                  show={popupState.popup1}
-                  onClose={() => closePopup("popup1")}
-                ></Popup>
               </div>
             ))}
         </div>

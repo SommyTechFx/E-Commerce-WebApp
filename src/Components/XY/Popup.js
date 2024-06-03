@@ -7,7 +7,6 @@
 //   return (
 //     <div className="popup-overlay" onClick={onClose}>
 //       <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-//         {" "}
 //         {children}
 //         <h2>Description</h2>
 //         <p>
