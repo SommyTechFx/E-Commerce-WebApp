@@ -20,6 +20,7 @@ import Ellipse4 from "../../../assets/Images4/Ellipse4.png";
 import love1 from "../../../assets/Images4/love1.png";
 import Cart1 from "../../../assets/Images4/Cart1.png";
 import eye1 from "../../../assets/Images4/eye1.png";
+import { Link } from "react-router-dom";
 function MainPage2() {
   return (
     <div className="MainPage">
@@ -28,7 +29,9 @@ function MainPage2() {
           <p>Home </p>
           <img src={Arrow} alt="arrow" />
           <p>
-            <span>Shop</span>
+            <Link className="Link" to="/page3">
+              <span>Shop</span>
+            </Link>
           </p>
         </div>
 
@@ -63,7 +66,9 @@ function MainPage2() {
             </div>
             <div className="button-Icons">
               <div>
-                <button>Select Options</button>
+                <Link className="Link" to="/page3">
+                  <button>Select Options</button>
+                </Link>
               </div>
 
               <div className="icons-sec">

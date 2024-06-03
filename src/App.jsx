@@ -9,7 +9,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route index element={<Hero />} />
+          <Route path="page1" index element={<Hero />} />
           <Route path="page2" element={<Hero2 />} />
           <Route path="page3" element={<Hero3 />} />
         </Routes>

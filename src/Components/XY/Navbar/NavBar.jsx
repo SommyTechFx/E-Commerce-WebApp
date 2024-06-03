@@ -22,32 +22,25 @@ function NavBar({ clicked, isClicked }) {
     isClicked(!clicked);
   };
 
-  // const navigate = useNavigate();
-
-  // const navigateToPage2 = () => {
-  //   navigate("/profile");
-  // };
-  // const navigateToPage2 = () => {
-  //   navigate("/home");
-  // };
-
   return (
     <div className="Nav">
       <ul className="Nav-wrapper">
         <li className="Nav-logo">
-          <Link className="Link" to="/">
-            Bandage
-          </Link>
+          <Link className="Link">Bandage</Link>
         </li>
         <li className="Nav-Element">
           <NavLink className="Link">
-            <Home to="/" />
+            <Link className="Link" to="/page1">
+              <Home />
+            </Link>
           </NavLink>
         </li>
 
         <liv className="Nav-Element">
           <NavLink className="Link">
-            <Shop to="/page2" />
+            <Link className="Link" to="/page2">
+              <Shop />
+            </Link>
           </NavLink>
         </liv>
 
@@ -70,7 +63,9 @@ function NavBar({ clicked, isClicked }) {
         </li>
         <li className="Nav-Element">
           <NavLink className="Link">
-            <Pages />
+            <Link className="Link">
+              <Pages to="/page2" />
+            </Link>
           </NavLink>
         </li>
 

@@ -20,6 +20,7 @@ import Slide2 from "./MainPageSlides/Slide2";
 import Slide7 from "./MainPageSlides/Slide7";
 import "./MainPage.css";
 import Slide4 from "./MainPageSlides/Slide4";
+import { Link } from "react-router-dom";
 
 function MainPage() {
   return (
@@ -168,8 +169,9 @@ function MainPage() {
           <p>
             <span>$16.48</span>
           </p>
-
-          <button>ADD YOUR CALL TO ACTION</button>
+          <Link className="Link" to="/page3">
+            <button>ADD YOUR CALL TO ACTION</button>
+          </Link>
         </div>
       </div>
 
