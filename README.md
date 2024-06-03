@@ -1,3 +1,9 @@
+# Notice #Notice Navigation Notice
+
+1. Click on Home to Navigate back to home page
+2. click on shop to Navigate to shop
+3. Click on product or add to cart to navigate to checkout
+
 # Introducing "Bandage"
 
 In the fast-paced world we live in today, convenience and quality have become paramount in the shopping experience. Bandage, a new and innovative e-commerce website, is here to revolutionize the way you shop for household products. From essential kitchen utensils to stylish home décor, HouseHold needs in total, Bandage offers a comprehensive selection of high-quality items that cater to every household needs, Makeup Accessories etc. Let’s delve into what makes Bandage the go-to destination for all your household shopping needs.
