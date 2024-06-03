@@ -1,5 +1,6 @@
 import "./Slides.css";
 import { useGetProductsQuery } from "../../../../services/api.js";
+import { Link } from "react-router-dom";
 // import { useSelector, useDispatch } from "react-redux";
 
 function Slide2() {
@@ -13,6 +14,7 @@ function Slide2() {
     <>
       {isLoading && <p>Loading...</p>}
       {error && <p>Error loading products</p>}
+
       <div className="Page2-Total" id="product">
         <div className=" page2-product">
           {products &&
@@ -21,7 +23,10 @@ function Slide2() {
                 <img src={product.thumbnail} alt="pic1" />
                 <p className="product-info">
                   <h5>{product.title}</h5>
-                  <p>{product.category}</p>
+                  <Link className="Link" to="/page3">
+                    <p>{product.category}</p>
+                  </Link>
+
                   <h6>
                     <span>${product.price}</span>${product.discountPercentage}
                   </h6>

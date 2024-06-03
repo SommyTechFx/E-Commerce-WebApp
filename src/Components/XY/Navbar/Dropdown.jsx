@@ -1,5 +1,5 @@
 import "./Dropdown.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 function menu() {
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
@@ -8,8 +8,10 @@ function menu() {
     <div className="Navbars">
       <ul className="Navbar-wrapper">
         <li className="Navbar-Element">
-          <NavLink className="Link" to="/">
-            Home
+          <NavLink className="Link">
+            <Link className="Link" to="/page1">
+              Home
+            </Link>
           </NavLink>
         </li>
         <li className="Navbar-Element">
