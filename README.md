@@ -1,14 +1,17 @@
 # Introducing "Bandage"
 
-In the fast-paced world we live in today, convenience and quality have become paramount in the shopping experience. Bandage, a new and innovative e-commerce website, is here to revolutionize the way you shop for household products. From essential kitchen utensils to stylish home décor, Bandage offers a comprehensive selection of high-quality items that cater to every household need. Let’s delve into what makes Bandage the go-to destination for all your household shopping needs.
+In the fast-paced world we live in today, convenience and quality have become paramount in the shopping experience. Bandage, a new and innovative e-commerce website, is here to revolutionize the way you shop for household products. From essential kitchen utensils to stylish home décor, HouseHold needs in total, Bandage offers a comprehensive selection of high-quality items that cater to every household needs, Makeup Accessories etc. Let’s delve into what makes Bandage the go-to destination for all your household shopping needs.
 
 # 1. A Diverse and Curated Selection
 
 At Bandage, we understand that every home is unique, and so are its needs. That’s why we’ve curated a diverse range of products that cater to various tastes and preferences. Whether you’re looking for durable cookware, elegant tableware, or functional storage solutions, Bandage has it all. Our product catalog includes:
 
+- Make-up kits
+- Furnitures
 - Kitchen Essentials:
 - Dining Sets:
 - Home Décor:
+- Foodstuffs
 
 # 2. Quality You Can Trust
 
