@@ -113,11 +113,11 @@
   }
 }
 
-/* .page3-product {
+.page3-product {
   display: flex;
   gap: 2rem;
   justify-content: center;
-} */
+}
 
 .product-div {
   border: 1px solid rgb(255, 248, 248);

@@ -1,12 +1,6 @@
 import Page3Icon1 from "../../../assets/Images3/Page3Icon1.png";
 import Page3Icon2 from "../../../assets/Images3/Page3Icon2.svg";
 import Page3Icon3 from "../../../assets/Images3/Page3Icon3.svg";
-import Page4Pc1 from "../../../assets/Images3/Page4Pc1.png";
-import Page4Pc2 from "../../../assets/Images3/Page4Pc2.png";
-import Page4Pc3 from "../../../assets/Images3/Page4Pc3.png";
-import Page4clock from "../../../assets/Images3/Page4clock.png";
-import Page4chart from "../../../assets/Images3/Page4chart.png";
-import Arrow from "../../../assets/Images3/Arrow.png";
 
 import Pg5profileicon from "../../../assets/Images3/Pg5profileicon.png";
 import StarIconFill from "../../../assets/Images3/StarIconFill.png";
@@ -25,6 +19,7 @@ import Slide1 from "./MainPageSlides/Slide1";
 import Slide2 from "./MainPageSlides/Slide2";
 import Slide7 from "./MainPageSlides/Slide7";
 import "./MainPage.css";
+import Slide4 from "./MainPageSlides/Slide4";
 
 function MainPage() {
   return (
@@ -106,104 +101,7 @@ function MainPage() {
           </p>
         </div>
 
-        <div className="page4-products-post">
-          <div className="Each-page4-container">
-            <div className="sticky-img-btn">
-              <img src={Page4Pc1} alt="page4-pic" />
-              <button className="New-btn">New</button>
-            </div>
-
-            <p className="page4-text-line">
-              <p>
-                <span>Google</span>&nbsp;&nbsp;Trending &nbsp;&nbsp;New
-              </p>
-              <h4>Loudest à la Madison #1 (L&apos;integral)</h4>
-              <p>
-                We focus on ergonomics and meeting you where you work. It&apos;s
-                only a keystroke away.
-              </p>
-              <div className="clock-chart">
-                <h6>
-                  <img src={Page4clock} alt="texts" />
-                  22 April 2021
-                </h6>
-
-                <h6>
-                  <img src={Page4chart} alt="texts" />
-                  10 comments
-                </h6>
-              </div>
-              <div className="learn-more">
-                <h4>Learn More</h4>
-                <img src={Arrow} alt="texts" />
-              </div>
-            </p>
-          </div>
-          <div className="Each-page4-container">
-            <div className="sticky-img-btn">
-              <img src={Page4Pc2} alt="page4-pic" />
-              <button className="New-btn">New</button>
-            </div>
-
-            <p className="page4-text-line">
-              <p>
-                <span>Google</span>&nbsp;&nbsp;Trending &nbsp;&nbsp;New
-              </p>
-              <h4>Loudest à la Madison #1 (L&apos;integral)</h4>
-              <p>
-                We focus on ergonomics and meeting you where you work. It&apos;s
-                only a keystroke away.
-              </p>
-              <div className="clock-chart">
-                <h6>
-                  <img src={Page4clock} alt="texts" />
-                  22 April 2021
-                </h6>
-
-                <h6>
-                  <img src={Page4chart} alt="texts" />
-                  10 comments
-                </h6>
-              </div>
-              <div className="learn-more">
-                <h4>Learn More</h4>
-                <img src={Arrow} alt="texts" />
-              </div>
-            </p>
-          </div>
-          <div className="Each-page4-container">
-            <div className="sticky-img-btn">
-              <img src={Page4Pc3} alt="page4-pic" />
-              <button className="New-btn">New</button>
-            </div>
-
-            <p className="page4-text-line">
-              <p>
-                <span>Google</span>&nbsp;&nbsp;Trending &nbsp;&nbsp;New
-              </p>
-              <h4>Loudest à la Madison #1 (L&apos;integral)</h4>
-              <p>
-                We focus on ergonomics and meeting you where you work. It&apos;s
-                only a keystroke away.
-              </p>
-              <div className="clock-chart">
-                <h6>
-                  <img src={Page4clock} alt="texts" />
-                  22 April 2021
-                </h6>
-
-                <h6>
-                  <img src={Page4chart} alt="texts" />
-                  10 comments
-                </h6>
-              </div>
-              <div className="learn-more">
-                <h4>Learn More</h4>
-                <img src={Arrow} alt="texts" />
-              </div>
-            </p>
-          </div>
-        </div>
+        <Slide4 />
       </div>
 
       <div className="Page5-Total" id="about">
