@@ -13,7 +13,7 @@ function Slide2() {
     <>
       {isLoading && <p>Loading...</p>}
       {error && <p>Error loading products</p>}
-      <div className="Page2-Total">
+      <div className="Page2-Total" id="product">
         <div className=" page2-product">
           {products &&
             products.products.map((product) => (

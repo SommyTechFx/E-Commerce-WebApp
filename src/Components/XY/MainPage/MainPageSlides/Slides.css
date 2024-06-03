@@ -2,24 +2,55 @@
 .page1 {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 9rem;
-  opacity: 0px;
+  max-width: 1224px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+  margin-top: 5rem;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
   .page1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    padding: 16px;
+    flex-direction: column;
+    width: 80%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .fig1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
   }
 }
-
+.container {
+  display: flex;
+  gap: 20px;
+  object-fit: cover;
+  border-radius: 5px;
+}
 .fig1 {
   display: flex;
+  flex-direction: column;
   position: relative;
+  margin-bottom: 10px;
+  border: 1px solid rgb(255, 248, 248);
+  background-color: rgb(245, 245, 245);
+}
+
+.fig1:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+}
+
+.fig1 img {
+  width: 500px;
 }
 
 .fig1-text {
@@ -56,198 +87,6 @@
   letter-spacing: 0.20000000298023224px;
   text-align: left;
 }
-.fig1 img {
-  width: 452px;
-  height: 620px;
-  padding: 24px 0px 0px 0px;
-  gap: 5px;
-  opacity: 0px;
-}
-
-/* fig2-text area */
-.fig2 {
-  display: flex;
-  position: relative;
-}
-
-.fig2-text {
-  position: absolute;
-  top: 4rem;
-  left: 2rem;
-}
-
-.fig2-text p {
-  font-family: "Montserra" t;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: left;
-  color: rgba(45, 192, 113, 1);
-}
-
-.fig2-text h5 {
-  font-family: "Montserrat";
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 50px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: left;
-  color: rgba(37, 43, 66, 1);
-}
-
-.fig2-text h6 {
-  font-family: "Montserrat";
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: left;
-}
-.fig2 img {
-  width: 670px;
-  height: 270px;
-  gap: 16px;
-  opacity: 0px;
-}
-
-.fig3 {
-  width: 679px;
-  height: 300px;
-  gap: 0.5rem;
-  opacity: 0px;
-  display: flex;
-  position: relative;
-}
-
-.fig3-text {
-  position: absolute;
-  top: 4rem;
-  left: 2rem;
-}
-
-.fig3-text p {
-  font-family: "Montserra" t;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: left;
-  color: rgba(45, 192, 113, 1);
-}
-
-.fig3-text h5 {
-  font-family: "Montserrat";
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 50px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: left;
-  color: rgba(37, 43, 66, 1);
-}
-
-.fig3-text h6 {
-  font-family: "Montserrat";
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: left;
-}
-.fig3 img {
-  width: 332px;
-  height: 320px;
-  gap: 0.5rem;
-  opacity: 0px;
-}
-
-.fig3-sub {
-  display: flex;
-  position: relative;
-}
-
-.fig3-sub-text {
-  position: absolute;
-  top: 4rem;
-  left: 2rem;
-}
-.fig3-sub-text p {
-  font-family: "Montserra" t;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: left;
-  color: rgba(45, 192, 113, 1);
-}
-
-.fig3-sub-text h5 {
-  font-family: "Montserrat";
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 50px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: left;
-  color: rgba(37, 43, 66, 1);
-}
-
-.fig3-sub-text h6 {
-  font-family: "Montserrat";
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: left;
-}
-
-/* slide2 css */
-
-.page2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.page2-product img {
-  width: 100%;
-}
-.product-text {
-  justify-content: center;
-  align-items: center;
-}
-
-.product-text h4 {
-  font-family: "Montserrat";
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: center;
-  color: rgba(115, 115, 115, 1);
-  margin-bottom: 1rem;
-}
-
-.product-text h3 {
-  font-family: "Montserrat";
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 32px;
-  letter-spacing: 0.10000000149011612px;
-  text-align: center;
-  color: rgba(37, 43, 66, 1);
-  margin-bottom: 1rem;
-}
-
-.product-text p {
-  font-family: "Montserrat";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: center;
-  margin-bottom: 1rem;
-  color: rgba(115, 115, 115, 1);
-}
 
 /* products list */
 .Page2-Total {
@@ -255,6 +94,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  cursor: pointer;
 }
 
 .page2-product {
@@ -283,6 +123,11 @@
   border: 1px solid rgb(255, 248, 248);
   background-color: rgb(245, 245, 245);
   margin-bottom: 2rem;
+}
+
+.product-div:hover {
+  transform: scale(1.05);
+  transition: all 1s;
 }
 .product-info {
   justify-content: center;

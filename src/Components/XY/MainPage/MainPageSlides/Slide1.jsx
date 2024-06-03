@@ -1,49 +1,60 @@
 // import React from 'react'
+// import "../MainPage.css";
 
-import pic1 from "../../../../assets/Images1/pic1.png";
-import pic2 from "../../../../assets/Images1/pic2.png";
-import pic3 from "../../../../assets/Images1/pic3.png";
-import pic4 from "../../../../assets/Images1/pic4.png";
+// import pic1 from "../../../../assets/Images1/pic1.png";
+// import pic2 from "../../../../assets/Images1/pic2.png";
+// import pic3 from "../../../../assets/Images1/pic3.png";
+// import pic4 from "../../../../assets/Images1/pic4.png";
+import { useState } from "react";
+import { useGetProductsQuery } from "../../../../services/api";
 import "./Slides.css";
+import Popup from "../../Popup";
 
 function Slide1() {
-  return (
-    <div className="page1">
-      <div className="fig1">
-        <img src={pic1} alt="pic1" />
-        <p className="fig1-text">
-          <p>5 Items</p>
-          <h5>FURNITURE</h5>
-          <h6>Read More</h6>
-        </p>
-      </div>
-      <div>
-        <div className="fig2">
-          <img src={pic2} alt="pic1" />
-          <p className="fig2-text">
-            <p>5 Items</p>
-            <h5>FURNITURE</h5>
-            <h6>Read More</h6>
-          </p>
-        </div>
+  const [popupState, setPopupState] = useState({
+    popup1: false,
+    popup2: false,
+  });
 
-        <div className="fig3" style={{ display: "flex" }}>
-          <div>
-            <img src={pic3} alt="pic1" />
-            <p className="fig3-text">
-              <p>5 Items</p>
-              <h5>FURNITURE</h5>
-              <h6>Read More</h6>
-            </p>
-          </div>
-          <div className="fig3-sub">
-            <img src={pic4} alt="pic1" />
-            <p className="fig3-sub-text">
-              <p>5 Items</p>
-              <h5>FURNITURE</h5>
-              <h6>Read More</h6>
-            </p>
-          </div>
+  const showPopup = (popupName) => {
+    setPopupState((prevState) => ({
+      ...prevState,
+      [popupName]: true,
+    }));
+  };
+
+  const closePopup = (popupName) => {
+    setPopupState((prevState) => ({
+      ...prevState,
+      [popupName]: false,
+    }));
+  };
+  const {
+    data: products,
+    error,
+    isLoading,
+  } = useGetProductsQuery({ q: "?limit=2&skip=10" });
+  return (
+    <div>
+      {isLoading && <p>Loading...</p>}
+      {error && <p>Error loading products</p>}
+      <div className="page1">
+        <div className="container">
+          {products &&
+            products.products.map((product) => (
+              <div key={product.id} className="fig1">
+                <img src={product.thumbnail} alt="pic1" />
+                <p className="fig1-text">
+                  <p>{product.stock} Items</p>
+                  <h5>{product.category}</h5>
+                  <h6>Read More onClick={() => showPopup("popup1")}</h6>
+                </p>
+                <Popup
+                  show={popupState.popup1}
+                  onClose={() => closePopup("popup1")}
+                ></Popup>
+              </div>
+            ))}
         </div>
       </div>
     </div>

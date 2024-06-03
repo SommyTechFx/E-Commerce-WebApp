@@ -1,5 +1,3 @@
-import "./MainPage.css";
-
 import Page3Icon1 from "../../../assets/Images3/Page3Icon1.png";
 import Page3Icon2 from "../../../assets/Images3/Page3Icon2.svg";
 import Page3Icon3 from "../../../assets/Images3/Page3Icon3.svg";
@@ -26,14 +24,14 @@ import Page5grid9 from "../../../assets/Images3/Page5grid9.png";
 import Slide1 from "./MainPageSlides/Slide1";
 import Slide2 from "./MainPageSlides/Slide2";
 import Slide7 from "./MainPageSlides/Slide7";
-// import Instagram from "../../../../assets/Images1/Instagram.png";
-// import Twitter from "../../../../assets/Images1/Twitter.png";
+import "./MainPage.css";
+
 function MainPage() {
   return (
     <div className="Mainpage">
       <Slide1 />
 
-      <div className="page2">
+      <div className="page2" id="product">
         <div>
           <p className="product-text">
             <h4>Featured Products</h4>

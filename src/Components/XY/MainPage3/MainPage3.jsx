@@ -15,6 +15,10 @@ function MainPage3() {
           <p>
             <span>Shop</span>
           </p>
+          <img src={Arrow} alt="arrow" />
+          <p>
+            <span> Shopping Cart</span>
+          </p>
         </div>
 
         <div>
