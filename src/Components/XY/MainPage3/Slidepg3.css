@@ -1,0 +1,45 @@
+/* .Directory {
+  display: flex;
+  justify-content: spa;
+} */
+
+.shopping-cart-spacing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Add-to-cart {
+  padding: 20px;
+}
+.shopping-cart-name h3 {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.6px;
+  text-align: left;
+  color: rgba(18, 21, 23, 1);
+}
+
+/* .wrapping-cart-div1 {
+  border: 1px solid red;
+} */
+
+.background-dark-sec {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  padding: 10px;
+  width: 400px;
+  background-color: rgba(59, 65, 72, 1);
+  box-sizing: rgba(0, 0, 0, 0.14);
+}
+
+.background-dark-sec p {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22.65px;
+  letter-spacing: 0.002em;
+  text-align: left;
+  color: rgba(254, 254, 254, 1);
+}
