@@ -30,7 +30,7 @@ function NavBar({ clicked, isClicked }) {
         </li>
         <li className="Nav-Element">
           <NavLink className="Link">
-            <Link className="Link" to="/page1">
+            <Link className="Link" to="/">
               <Home />
             </Link>
           </NavLink>
